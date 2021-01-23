@@ -1,5 +1,5 @@
 import NIO
-import Yaproq
+import struct Yaproq.Template
 
 public protocol Templating {
     func loadTemplate(named name: String, on eventLoop: EventLoop) throws -> EventLoopFuture<Template>

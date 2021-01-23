@@ -11,7 +11,7 @@ public final class NonBlockingFileIOTemplating: Templating {
     let fileIO: NonBlockingFileIO
     private let templating: Yaproq
 
-    public init(configuration: Yaproq.Configuration, eventLoopGroup: EventLoopGroup) throws {
+    public init(configuration: Yaproq.Configuration, eventLoopGroup: EventLoopGroup) {
         templating = Yaproq(configuration: configuration)
         self.eventLoopGroup = eventLoopGroup
         fileIO = NonBlockingFileIO(threadPool: threadPool)
