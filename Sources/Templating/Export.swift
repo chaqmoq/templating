@@ -1,1 +1,1 @@
-@_exported import struct Yaproq.Template
+@_exported import Yaproq
